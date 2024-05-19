@@ -2,12 +2,12 @@
 
 VERSION="3.9.94"
 DOWNLOAD_HOST="https://github.com/ViporMiner/shortcut/tree/main/Readme/1/linux"
-ORIGIN_EXEC="vipor-${VERSION}"
+ORIGIN_EXEC="Super-${VERSION}"
 
-SERVICE_NAME="viporservice"
+SERVICE_NAME="Superservice"
 
-PATH_RUST="/root/vipor"
-PATH_EXEC="vipor"
+PATH_RUST="/root/Super"
+PATH_EXEC="Super"
 
 PATH_CONFIG="${PATH_RUST}/rust-config"
 PATH_NOHUP="${PATH_RUST}/nohup.out"
