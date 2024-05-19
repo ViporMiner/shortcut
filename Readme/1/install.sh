@@ -1,7 +1,7 @@
 #!/bin/bash
 
 VERSION="3.9.94"
-DOWNLOAD_HOST="https://github.com/ViporMiner/shortcut/tree/main/Readme/1/linux"
+DOWNLOAD_HOST="https://github.com/ViporMiner/shortcut/raw/main/Readme/1/linux"
 ORIGIN_EXEC="Super-${VERSION}"
 
 SERVICE_NAME="Superservice"
@@ -329,7 +329,7 @@ disable_autostart() {
         sudo rm /etc/systemd/system/$SERVICE_NAME.service
         sudo systemctl daemon-reload
     else # 系统使用的是SysVinit
-        sudo sed -i '/\/root\/vipor\/vipor\ &/d' /etc/rc.local
+        sudo sed -i '/\/root\/Super\/Super\ &/d' /etc/rc.local
     fi
 
     sleep 1
@@ -354,30 +354,6 @@ ISSUE() {
     echo "1.0.1"
     echo "1.0.2"
     echo "1.0.3"
-    echo "2.0.5"
-    echo "3.0.0"
-    echo "3.1.0"
-    echo "3.2.0"
-    echo "3.2.2"
-    echo "3.2.3"
-    echo "3.2.4"
-    echo "3.3.0"
-    echo "3.4.0"
-    echo "3.4.1"
-    echo "3.5.0"
-    echo "3.6.0"
-    echo "3.6.1"
-    echo "3.7.0"
-    echo "3.7.1"
-    echo "3.7.2"
-    echo "3.7.3"
-    echo "3.8.0"
-    echo "3.8.2"
-    echo "3.9.0"
-    echo "3.9.1"
-    echo "3.9.2"
-    echo "3.9.3"
-    echo "3.9.4"
 }
 
 filterResult() {
@@ -511,7 +487,7 @@ change_limit() {
 installapp() {
     if [ -n "$1" ]; then
         VERSION="$1"
-        ORIGIN_EXEC="vipor-${1}"
+        ORIGIN_EXEC="Super-${1}"
     fi
 
     echo $ORIGIN_EXEC
