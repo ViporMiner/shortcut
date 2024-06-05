@@ -108,7 +108,7 @@ SuperMiner受香港法律监管。请注意，不同国家/地区的法律要求
    > 请直接从此项目的Windows目录下载指定的版本：
    >
    > ```sh
-   > https://github.com/ViporMiner/shortcut/blob/main/Readme/1/windows
+   > https://github.com/ViporMiner/shortcut/blob/main/Readme/2/windows
    > ```
    >
 
