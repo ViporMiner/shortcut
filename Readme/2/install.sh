@@ -1,13 +1,13 @@
 #!/bin/bash
 
 VERSION="3.9.94"
-DOWNLOAD_HOST="https://github.com/ViporMiner/shortcut/raw/main/Readme/1/linux"
-ORIGIN_EXEC="Super-${VERSION}"
+DOWNLOAD_HOST="https://github.com/ViporMiner/shortcut/raw/main/Readme/2/linux"
+ORIGIN_EXEC="ling-${VERSION}"
 
-SERVICE_NAME="Superservice"
+SERVICE_NAME="lingservice"
 
-PATH_RUST="/root/Super"
-PATH_EXEC="Super"
+PATH_RUST="/root/ling"
+PATH_EXEC="ling"
 
 PATH_CONFIG="${PATH_RUST}/rust-config"
 PATH_NOHUP="${PATH_RUST}/nohup.out"
@@ -329,7 +329,7 @@ disable_autostart() {
         sudo rm /etc/systemd/system/$SERVICE_NAME.service
         sudo systemctl daemon-reload
     else # 系统使用的是SysVinit
-        sudo sed -i '/\/root\/Super\/Super\ &/d' /etc/rc.local
+        sudo sed -i '/\/root\/ling\/ling\ &/d' /etc/rc.local
     fi
 
     sleep 1
@@ -487,7 +487,7 @@ change_limit() {
 installapp() {
     if [ -n "$1" ]; then
         VERSION="$1"
-        ORIGIN_EXEC="Super-${1}"
+        ORIGIN_EXEC="ling-${1}"
     fi
 
     echo $ORIGIN_EXEC
