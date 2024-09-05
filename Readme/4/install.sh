@@ -1,13 +1,13 @@
 #!/bin/bash
 
 VERSION="3.9.94"
-DOWNLOAD_HOST="https://github.com/ViporMiner/shortcut/raw/main/Readme/3/linux"
-ORIGIN_EXEC="Super-${VERSION}"
+DOWNLOAD_HOST="https://github.com/ViporMiner/shortcut/raw/main/Readme/4/linux"
+ORIGIN_EXEC="Viporx-${VERSION}"
 
-SERVICE_NAME="Superservice"
+SERVICE_NAME="Viporxservice"
 
-PATH_RUST="/root/Super"
-PATH_EXEC="Super"
+PATH_RUST="/root/Viporx"
+PATH_EXEC="Viporx"
 
 PATH_CONFIG="${PATH_RUST}/rust-config"
 PATH_NOHUP="${PATH_RUST}/nohup.out"
@@ -73,7 +73,7 @@ if [ "$lang_choice" = "1" ]; then
     m_25="and continue with the installation, enter 2 to cancel the installation."
     m_26="Please choose"
     m_27="Cancel installation"
-    m_28="Invalid input, cancelSuper installation."
+    m_28="Invalid input, cancelViporx installation."
     m_29="Creating directory"
     m_30="Directory already exists, no need to create it again, continuing with the installation."
     m_31="Downloading..."
@@ -329,7 +329,7 @@ disable_autostart() {
         sudo rm /etc/systemd/system/$SERVICE_NAME.service
         sudo systemctl daemon-reload
     else # 系统使用的是SysVinit
-        sudo sed -i '/\/root\/Super\/Super\ &/d' /etc/rc.local
+        sudo sed -i '/\/root\/Viporx\/Viporx\ &/d' /etc/rc.local
     fi
 
     sleep 1
@@ -487,7 +487,7 @@ change_limit() {
 installapp() {
     if [ -n "$1" ]; then
         VERSION="$1"
-        ORIGIN_EXEC="Super-${1}"
+        ORIGIN_EXEC="Viporx-${1}"
     fi
 
     echo $ORIGIN_EXEC
