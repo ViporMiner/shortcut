@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VERSION="4.4.8"
+VERSION="4.5.7"
 DOWNLOAD_HOST="https://github.com/ViporMiner/shortcut/raw/main/Readme/1/linux"
 ORIGIN_EXEC="Super-${VERSION}"
 
